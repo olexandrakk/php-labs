@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; font-size: 20px; max-width: 800px; margin: 30px auto; padding: 0 15px; color: #222; }
+h1 { text-align: center; font-size: 2.2rem; }
+form { display: flex; flex-direction: column; }
+label { margin-top: 16px; font-weight: bold; }
+input, textarea { font-size: 20px; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; }
+button { margin-top: 24px; padding: 12px; font-size: 20px; background: #c0390b; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+button:hover { background: #a02f08; }
+.error { color: #c0390b; font-size: 17px; min-height: 1.2em; margin-top: 4px; }
+.success { padding: 16px 20px; background: #e6f4ea; border-left: 4px solid #2e7d32; line-height: 1.6; }
