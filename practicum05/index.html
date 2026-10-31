@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форум — AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Форум: теми (AJAX)</h1>
+
+    <input type="text" id="search" placeholder="Пошук за автором...">
+
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Назва</th><th>Автор</th><th>Створено</th><th>Закріплено</th></tr>
+        </thead>
+        <tbody id="results"></tbody>
+    </table>
+
+    <h2>Нова тема</h2>
+    <form id="addForm">
+        <label for="title">Назва</label>
+        <input type="text" id="title" name="title" required maxlength="100">
+
+        <label for="author">Автор</label>
+        <input type="text" id="author" name="author" required maxlength="100">
+
+        <label class="checkbox"><input type="checkbox" id="isPinned" name="is_pinned"> Закріпити</label>
+
+        <button type="submit">Додати</button>
+        <div id="formMessage"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
